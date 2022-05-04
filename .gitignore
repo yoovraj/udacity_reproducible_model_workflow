@@ -1,3 +1,11 @@
+# Mlflow
+mlruns/
+mlartifacts/
+outputs/
+
+# Mac
+.DS_Store
+
 # wandb
 *.swp
 .python-version

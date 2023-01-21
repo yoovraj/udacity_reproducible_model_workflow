@@ -14,3 +14,5 @@ conda create --name udacity python=3.8 mlflow jupyter pandas matplotlib requests
 pip install -r requirements.txt
 autopep8 --in-place --aggressive --aggressive  upload_artifact.py
 ```
+
+

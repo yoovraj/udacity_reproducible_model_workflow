@@ -1,0 +1,14 @@
+name: exercise_4
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - jupyterlab=3.5.2
+  - seaborn=0.12.2
+  - pandas=1.5.3
+  - pip=20.3.3
+  - pandas-profiling=3.6.2
+  - pyarrow=10.0.1
+  - pip:
+      - wandb==0.12.17

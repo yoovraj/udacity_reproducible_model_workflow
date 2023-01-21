@@ -1,0 +1,11 @@
+name: exercise_5
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pandas=1.5.3
+  - pip=20.3.3
+  - pyarrow=10.0.1
+  - pip:
+      - wandb==0.12.17

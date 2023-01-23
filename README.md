@@ -55,8 +55,20 @@ wc -l  artifacts/data_train.csv:v0/data_train.csv
 wc -l  artifacts/data_test.csv:v0/data_test.csv
 wc -l  artifacts/preprocessed_data.csv:v0/preprocessed_data.csv
 ---
-
 ```
+
+- exersize_7,8:  
+```
+mlflow run .
+```
+
+- exersize_9:  
+```
+mlflow run . -P reference_artifact="exercise_6/data_train.csv:latest" \
+             -P sample_artifact="exercise_6/data_test.csv:latest" \
+             -P ks_alpha=0.1
+```
+
 # environment setup
 ```
 conda create --name udacity python=3.8 mlflow jupyter pandas matplotlib requests -c conda-forge

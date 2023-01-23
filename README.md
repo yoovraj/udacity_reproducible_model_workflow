@@ -67,6 +67,18 @@ mlflow run .
 mlflow run . -P reference_artifact="exercise_6/data_train.csv:latest" \
              -P sample_artifact="exercise_6/data_test.csv:latest" \
              -P ks_alpha=0.1
+
+mlflow run . -P reference_artifact="exercise_6/data_train.csv:latest" \
+             -P sample_artifact="exercise_6/data_test.csv:latest" \
+             -P ks_alpha=0.9
+> fails becuase p_value is too low and the 2 distributions are not similar 
+
+```
+
+- exercise_10:  
+```
+mlflow run .
+> Faced lot of issues due to versions, since using latest versions of libraries.
 ```
 
 # environment setup
